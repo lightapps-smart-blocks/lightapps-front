@@ -1,13 +1,28 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Image from 'next/image';
+import Header from '../components/Header';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-    </main>
-  )
+    <div>
+      <Header />
+      <main className="flex flex-col items-center justify-center p-24">
+        <Carousel autoPlay infiniteLoop>
+          <div>
+            <img src="/images/app1.png" />
+            <p className="legend">App 1</p>
+          </div>
+          <div>
+            <img src="/images/app2.png" />
+            <p className="legend">App 2</p>
+          </div>
+          <div>
+            <img src="/images/app3.png" />
+            <p className="legend">App 3</p>
+          </div>
+        </Carousel>
+      </main>
+    </div>
+  );
 }
