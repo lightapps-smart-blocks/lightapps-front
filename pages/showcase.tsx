@@ -10,15 +10,15 @@ export default function Showcase() {
       <main className="flex-grow flex flex-col items-center justify-center p-24">
         <Carousel autoPlay infiniteLoop>
           <div>
-            <img src="/carousel/app1.png" />
+            <img src="/carousel/demo-01.jpeg" />
             <p className="legend">App 1</p>
           </div>
           <div>
-            <img src="/carousel/app2.png" />
+            <img src="/carousel/demo-02.jpeg" />
             <p className="legend">App 2</p>
           </div>
           <div>
-            <img src="/carousel/app3.png" />
+            <img src="/carousel/demo-03.jpeg" />
             <p className="legend">App 3</p>
           </div>
         </Carousel>
