@@ -6,6 +6,7 @@ export default function PrivacyPolicy() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow flex flex-col items-center justify-center p-24">
+        <h1>Privacy Policy</h1>
         <p className="mt-4 text-xl">
           Your privacy is important to us. It is our policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.
         </p>
