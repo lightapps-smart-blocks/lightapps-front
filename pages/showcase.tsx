@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 
 export default function Showcase() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex flex-col items-center justify-center p-24">
+      <main className="flex-grow flex flex-col items-center justify-center p-24">
         <Carousel autoPlay infiniteLoop>
           <div>
             <img src="/images/app1.png" />
@@ -23,6 +24,7 @@ export default function Showcase() {
           </div>
         </Carousel>
       </main>
+      <Footer />
     </div>
   );
 }
