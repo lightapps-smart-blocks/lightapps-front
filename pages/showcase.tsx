@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Carousel } from 'react-responsive-carousel';
@@ -11,15 +10,15 @@ export default function Showcase() {
       <main className="flex-grow flex flex-col items-center justify-center p-24">
         <Carousel autoPlay infiniteLoop>
           <div>
-            <img src="/images/app1.png" />
+            <img src="/carousel/app1.png" />
             <p className="legend">App 1</p>
           </div>
           <div>
-            <img src="/images/app2.png" />
+            <img src="/carousel/app2.png" />
             <p className="legend">App 2</p>
           </div>
           <div>
-            <img src="/images/app3.png" />
+            <img src="/carousel/app3.png" />
             <p className="legend">App 3</p>
           </div>
         </Carousel>
