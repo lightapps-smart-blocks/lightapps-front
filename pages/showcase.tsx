@@ -8,20 +8,22 @@ export default function Showcase() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow flex flex-col items-center justify-center p-24">
-        <Carousel autoPlay infiniteLoop>
-          <div>
-            <img src="/carousel/app1.png" />
-            <p className="legend">App 1</p>
-          </div>
-          <div>
-            <img src="/carousel/app2.png" />
-            <p className="legend">App 2</p>
-          </div>
-          <div>
-            <img src="/carousel/app3.png" />
-            <p className="legend">App 3</p>
-          </div>
-        </Carousel>
+        <div className="h-screen w-full flex items-center justify-center">
+          <Carousel autoPlay infiniteLoop className="h-full w-full">
+            <div className="h-full w-full flex items-center justify-center">
+              <img src="/carousel/app1.png" className="object-cover h-full w-full" />
+              <p className="legend">App 1</p>
+            </div>
+            <div className="h-full w-full flex items-center justify-center">
+              <img src="/carousel/app2.png" className="object-cover h-full w-full" />
+              <p className="legend">App 2</p>
+            </div>
+            <div className="h-full w-full flex items-center justify-center">
+              <img src="/carousel/app3.png" className="object-cover h-full w-full" />
+              <p className="legend">App 3</p>
+            </div>
+          </Carousel>
+        </div>
       </main>
       <Footer />
     </div>
