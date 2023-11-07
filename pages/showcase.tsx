@@ -8,7 +8,7 @@ export default function Showcase() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow flex flex-col items-center justify-center p-24">
-        <div className="h-screen w-full flex items-center justify-center">
+        <div className="h-1/2 w-3/4 flex items-center justify-center">
           <Carousel autoPlay infiniteLoop className="h-full w-full">
             <div className="h-full w-full flex items-center justify-center">
               <img src="/carousel/demo-01.jpeg" className="object-cover h-full w-full" />
